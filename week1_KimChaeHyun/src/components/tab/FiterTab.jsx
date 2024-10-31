@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // useNavigate 훅 import
+import { useNavigate } from 'react-router-dom';
 import styles from './FilterTab.module.css';
 import { IcTrend, IcRec, IcFeed, IcMore } from "@assets/svgs";
 

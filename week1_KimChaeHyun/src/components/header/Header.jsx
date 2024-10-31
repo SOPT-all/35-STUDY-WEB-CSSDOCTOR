@@ -14,7 +14,7 @@ const Header = () => {
         </button>
         <div className={styles.ProfileWrapper}>
             <img src='https://velog.velcdn.com/images/imddoy/profile/01b111b5-7ab9-45f6-98fd-fc7d6dba71d4/social_profile.jpeg' className={styles.ProfileIcon}/>
-            <Toggle  className={styles.HeaderIcon}/>
+            <Toggle  className={styles.ToggleIcon}/>
         </div>
         </div>
     </div>
