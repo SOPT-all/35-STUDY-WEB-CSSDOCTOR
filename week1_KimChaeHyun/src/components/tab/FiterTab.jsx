@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './FilterTab.module.css';
 import { IcTrend, IcRec, IcFeed, IcMore } from "@assets/svgs";
+import DropdownMenu from '@components/dropdownMenu/DropdownMenu';
 
 const tabs = [
   { id: 1, label: '트렌딩', icon: <IcTrend />, path: '/trending/week' },
@@ -17,6 +18,13 @@ const FilterTab = () => {
     setActiveTab(tab.id);
     navigate(tab.path);
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
 
   return (
     <div className={styles.tabContainer}>
@@ -38,8 +46,25 @@ const FilterTab = () => {
         style={{ transform: `translateX(${(activeTab - 1) * 100}%)` }}
       />
       </div>
+
       <div className={styles.moreButton}>
-        <IcMore className={styles.icon} />
+        <DropdownMenu />
+        <IcMore className={styles.icon} onClick={handleToggle}/>
+        {isOpen && (
+        <div className={styles.dropdownMenu}>
+          <div className={styles.dropdownItem}>공지사항</div>
+          <div className={styles.dropdownItem}>태그 목록</div>
+          <div className={styles.dropdownItem}>서비스 정책</div>
+          <div className={styles.dropdownItem}>Slack</div>
+          <div className={styles.dropdownItems}>
+            <div>문의</div>
+            <div>contact@velog.io</div>
+          </div>
+          <div className={styles.dropdownImg}>
+            <img src='https://graphcdn.io/badge.svg' />
+          </div>
+        </div>
+      )}
       </div>
     </div>
   );
