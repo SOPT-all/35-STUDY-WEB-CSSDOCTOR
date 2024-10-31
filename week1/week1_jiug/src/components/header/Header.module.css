@@ -1,0 +1,62 @@
+.header__section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  position: relative;
+}
+.header__icon {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.header__icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.header__btn {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  outline: none;
+  font-size: 1rem;
+  padding: 0rem 1rem;
+  cursor: pointer;
+}
+.header__profile {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.085);
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.header__triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.5rem solid black;
+  cursor: pointer;
+}
+.header__triangle:hover {
+  border-top: 0.5rem solid gray;
+}

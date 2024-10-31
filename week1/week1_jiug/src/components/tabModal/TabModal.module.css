@@ -1,0 +1,36 @@
+.modal {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  z-index: 50;
+  min-width: 8rem;
+}
+
+.menuItem {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #495057;
+  white-space: pre-line;
+}
+
+.menuItem:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.contactItem {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  color: #868e96;
+}

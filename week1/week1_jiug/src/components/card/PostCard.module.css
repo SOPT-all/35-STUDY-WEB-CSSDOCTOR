@@ -1,0 +1,103 @@
+.card {
+  width: 20rem;
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.thumbnail {
+  width: 100%;
+  padding-top: 56%;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.summary {
+  font-size: 0.9rem;
+  color: #495057;
+  margin: 0 0 1rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  height: 2.7em;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #868e96;
+}
+
+.meta > span:not(:last-child)::after {
+  content: '·';
+  margin: 0 0.5rem;
+}
+
+.footer {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #f1f3f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.footer__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profileImg {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  margin-right: 0.5rem;
+}
+
+.author {
+  color: #495057;
+}
+
+.likes {
+  color: #ff6b6b;
+}
