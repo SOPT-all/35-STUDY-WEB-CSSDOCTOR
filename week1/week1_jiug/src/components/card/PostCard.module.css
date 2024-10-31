@@ -1,4 +1,5 @@
 .card {
+  width: 20rem;
   break-inside: avoid;
   margin-bottom: 2rem;
   background: white;
@@ -18,7 +19,7 @@
 
 .thumbnail {
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 56%;
   position: relative;
   overflow: hidden;
 }
