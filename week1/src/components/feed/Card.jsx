@@ -4,7 +4,7 @@ const Card = ({ item }) => {
   return (
     <li className={styles.card}>
       <div className={styles.card_img}>
-        <img />
+        <img src={item.image} alt={`card ${item.id}`} />
       </div>
 
       <div className={styles.card_description}>

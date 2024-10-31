@@ -6,7 +6,8 @@
     "date": "2024년 10월 21일",
     "comments": 19,
     "author": "강아지",
-    "likes": 120
+    "likes": 120,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "date": "2024년 10월 22일",
     "comments": 30,
     "author": "고양이",
-    "likes": 330
+    "likes": 330,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "date": "2024년 10월 23일",
     "comments": 0,
     "author": "깜냥이",
-    "likes": 38
+    "likes": 38,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "date": "2024년 10월 24일",
     "comments": 45,
     "author": "아이스 아메리카노",
-    "likes": 100
+    "likes": 100,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "date": "2024년 10월 25일",
     "comments": 45,
     "author": "아이스 카페라떼",
-    "likes": 198
+    "likes": 198,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "date": "2024년 10월 26일",
     "comments": 5,
     "author": "허채린",
-    "likes": 198
+    "likes": 198,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "date": "2024년 10월 27일",
     "comments": 45,
     "author": "변지혜",
-    "likes": 198
+    "likes": 198,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "date": "2024년 10월 28일",
     "comments": 10,
     "author": "최지원",
-    "likes": 4509
+    "likes": 4509,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "date": "2024년 10월 29일",
     "comments": 45,
     "author": "개발자",
-    "likes": 18
+    "likes": 18,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "date": "2024년 10월 30일",
     "comments": 45,
     "author": "구교환",
-    "likes": 198
+    "likes": 198,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "date": "2024년 10월 31일",
     "comments": 4,
     "author": "또이",
-    "likes": 4
+    "likes": 4,
+    "image": "src/assets/image.jpg"
   },
   {
     "id": 12,
@@ -105,6 +116,7 @@
     "date": "2024년 10월 31일",
     "comments": 45,
     "author": "도커",
-    "likes": 198
+    "likes": 198,
+    "image": "src/assets/image.jpg"
   }
 ]

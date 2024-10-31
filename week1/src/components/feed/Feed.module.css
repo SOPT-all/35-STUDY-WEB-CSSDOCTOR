@@ -51,9 +51,14 @@
   height: 20rem;
   cursor: pointer;
 }
+.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .card_description {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   height: 15rem;
@@ -83,7 +88,6 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  word-break: keep-all;
 }
 .card_description span {
   margin-top: auto;
@@ -101,6 +105,7 @@
 .card_info div {
   display: flex;
   gap: 1rem;
+  line-height: 115%;
 }
 .card_info div b {
   color: gray;
