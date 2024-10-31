@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+#root {
+  text-align: center;
+  font-size: 62.5%; /* 1rem = 10px */
+  padding: 0 6.4rem;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 2em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  filter: invert(1);
+}
+
+.rightHeader{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.loginBtn {
+  padding: 0.6rem 1rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2rem; /* 버튼 모서리 둥글게 */
+  display: flex; /* 플렉스박스 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  cursor: pointer; /* 마우스 커서 변경 */
+  transition: background-color 0.3s; /* 부드러운 색상 전환 */
+}
+
+.loginBtn:hover {
+  background-color: grey;
+  border: none;
+}
+
+
+
+/* Tab 부분 시작 */
+.TabWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.leftTab {
+  display: flex; /* 가로로 정렬 */
+  flex-direction: row;
+}
+
+
+
+/* Content 부분 시작 */
+.ContentWrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
