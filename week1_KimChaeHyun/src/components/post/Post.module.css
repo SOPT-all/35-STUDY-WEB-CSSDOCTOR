@@ -1,5 +1,5 @@
 .postContainer {
-    width: 30rem;
+    width: 100%;
     border: 1px solid var(--border3);
     border-radius: 8px;
     overflow: hidden;
@@ -8,6 +8,8 @@
     box-shadow: 0 2px 4px var(--slight-layer);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+
+    flex: 1 1 30rem;
   }
   
   .postContainer:hover {
