@@ -1,0 +1,122 @@
+.tabContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  width: 28rem;
+}
+
+.tabItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  flex: 1;
+  color: var(--text3);
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.tabItem:hover {
+  color: var(--accent2);
+}
+
+.active {
+  color: var(--text1);
+  font-weight: bold;
+}
+
+.tabIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% / 3 + 0.3rem);
+  height: 0.2rem;
+  background-color: var(--text1);
+  transition: transform 0.3s ease;
+}
+
+.icon {
+  font-size: 2.4rem;
+
+  &:hover{
+    color: var(--text1);
+}
+}
+
+.label {
+  font: var(--heading4);
+}
+
+.moreButton {
+  color: var(--text3);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdownContainer {
+  display: inline-block;
+}
+
+.dropdownButton {
+  border: 1px solid var(--border3);
+  border-radius: 4px;
+  width: 12rem;
+  height: 2.4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text3);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  width: 20rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  z-index: 100;
+  background-color: var(--bg-element1);
+  font: var(--body1-normal-medi);
+}
+
+.dropdownItem {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: var(--bg-element3);
+  color: var(--primary1);
+}
+
+.dropdownItems {
+  padding: 1rem;
+  font-size: small;
+  cursor: pointer;
+}
+
+.dropdownImg {
+  margin: 0.8rem auto;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 0.8rem;
+}

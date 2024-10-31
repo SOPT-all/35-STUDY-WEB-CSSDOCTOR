@@ -1,0 +1,96 @@
+.HeaderContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 1.2rem;
+}
+
+.HeaderBtnWrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.HeaderIcon {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0.1rem;
+
+    border-radius: 100%;
+    box-sizing: content-box;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--accent4);
+    }
+}
+
+.WriteBtn{
+    width: 12rem;
+    height: 4rem;
+
+    color: var(--bg-element5);
+    border: 1px solid var(--bg-element5);
+    border-radius: 18px;
+    font: var(--heading4);
+
+    &:hover{
+        color: var(--button-text);
+        background-color: var(--accent1);
+    }
+}
+
+.ProfileWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.ProfileIcon{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+
+.ToggleIcon {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0.1rem;
+
+    border-radius: 100%;
+    box-sizing: content-box;
+    cursor: pointer;
+    color: var(--text3);
+
+    &:hover{
+        color: var(--text1);
+    }
+}
+
+.DropdownMenu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 20rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    z-index: 100;
+    background-color: var(--bg-element1);
+    font: var(--body1-normal-medi);
+
+}
+
+.DropdownMenu div {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.DropdownMenu div:hover {
+    background-color: var(--bg-element3);
+    color: var(--primary1);
+}
