@@ -33,6 +33,10 @@ const FilterTab = () => {
             <span className={styles.label}>{tab.label}</span>
           </div>
         ))}
+         <div 
+        className={styles.tabIndicator} 
+        style={{ transform: `translateX(${(activeTab - 1) * 100}%)` }}
+      />
       </div>
       <div className={styles.moreButton}>
         <IcMore className={styles.icon} />
