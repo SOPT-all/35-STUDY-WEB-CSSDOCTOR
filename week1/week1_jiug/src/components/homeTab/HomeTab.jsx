@@ -7,7 +7,7 @@ import TabModal from '../tabModal/TabModal';
 function HomeTab() {
   const [timeModalOpen, setTimeModalOpen] = useState(false);
   const [settingsModalOpen, setSettingsModalOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState('trending'); // 기본값을 trending으로 설정
+  const [activeTab, setActiveTab] = useState('trending');
 
   const handleTimeClick = () => {
     setTimeModalOpen(!timeModalOpen);
