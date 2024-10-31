@@ -12,11 +12,11 @@ header .logo {
 header section {
   display: flex;
   align-items: center;
-  gap: 3rem;
-  font-size: 2.5rem;
+  gap: 2rem;
+  font-size: 2rem;
 }
 
-header button {
+header section button {
   padding: 0.8rem 1.6rem;
   background-color: transparent;
   border: 1px solid black;
@@ -29,4 +29,21 @@ header button {
     background-color: black;
     color: white;
   }
+}
+
+header section .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+header section .icon:hover {
+  background-color: rgb(232, 232, 232);
+  border-radius: 50%;
+}
+
+header section button,
+header section i {
+  cursor: pointer;
 }
