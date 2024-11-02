@@ -30,6 +30,33 @@ body {
   padding: 0.6rem;
   width: 3.5rem;
   border-radius: 50rem;
+  transition: background-color 0.3s;
+}
+
+.logIn:hover {
+  background-color: rgb(61, 61, 61);
+}
+
+.bell {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.bell:hover {
+  background-color: rgba(65, 65, 65, 0.155);
+}
+
+.search {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.search:hover {
+  background-color: rgba(65, 65, 65, 0.155);
 }
 
 .category {
@@ -96,6 +123,11 @@ select {
   border: none;
   border-radius: 0.2rem;
   padding: 0.5rem;
+  transition: filter 0.3s;
+}
+
+select:hover {
+  filter: brightness(1.1);
 }
 
 .selectRange {
@@ -108,11 +140,12 @@ select {
   width: 22rem;
   height: 26.5rem;
   margin: 0 0.1rem 0.5rem 2rem;
-  transition: transform 0.3s;
+  transition: translateY 0.5s, box-shadow 0.5s;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: translateY(-0.5rem);
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .img {
