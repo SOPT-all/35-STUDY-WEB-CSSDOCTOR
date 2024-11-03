@@ -11,6 +11,7 @@ header .logo {
 }
 
 header section {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -47,4 +48,24 @@ header section .icon:hover {
 header section button,
 header section i {
   cursor: pointer;
+}
+
+header .menu {
+  position: absolute;
+  top: 5.2rem;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1;
+}
+header .menu li {
+  padding: 1.6rem;
+  width: 19.2rem;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: whitesmoke;
+    color: #12b886;
+  }
 }

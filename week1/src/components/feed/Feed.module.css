@@ -8,6 +8,7 @@
   margin: 3rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.8rem;
 }
 
@@ -26,6 +27,28 @@
   font-weight: 600;
   color: black;
   border-bottom: 2px solid black;
+}
+
+.feed_menu {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.feed_menu_period {
+  padding: 1rem;
+  display: flex;
+  gap: 5rem;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .feed {
