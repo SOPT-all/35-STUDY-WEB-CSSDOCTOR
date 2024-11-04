@@ -1,0 +1,86 @@
+@import url('./reset.css');
+
+body {
+  background-color: rgb(244, 244, 244);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 2rem;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: column; /*세로로 정렬하고 갭 주고 싶었는데 이렇게 하면 되는 군*/
+  gap: 1rem;
+  padding: 2rem;
+  position: relative; /*.profileContainer의 부모요소로서 준 것*/
+}
+
+.categorySet {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.categoryFooter {
+  position: relative;
+  bottom: -21rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.categoryThreads {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categoryMore {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.line {
+  border-left: thin solid gray;
+  height: 100vh;
+  left: 15rem;
+  position: absolute;
+  top: 0; /*이거 안하니까 선이 자꾸 밑에 있어서 짜증났음*/
+}
+
+.img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileBorder {
+  border: 0.2rem solid rgb(232, 119, 102);
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.id {
+  font-size: 0.8rem;
+}
+
+.profileSet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.profileContainer {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 30rem;
+}
