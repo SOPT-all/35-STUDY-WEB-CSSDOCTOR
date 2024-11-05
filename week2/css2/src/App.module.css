@@ -84,3 +84,105 @@ body {
   top: 2rem;
   left: 30rem;
 }
+
+.feedContainer {
+  position: absolute;
+  top: 10rem;
+  left: 40rem;
+}
+
+.feedHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0 0.6rem 0;
+  justify-content: space-between;
+}
+
+.feedHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.feedTime {
+  color: gray;
+}
+
+.profileImg {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.feedId {
+  font-weight: 600;
+}
+
+.feedMainImg {
+  width: 30rem;
+}
+
+.feedIcon {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedFooter {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.feedFooterImg,
+.feedFooterImg2 {
+  width: 1.2rem;
+  border-radius: 50%;
+  border: 0.2rem solid rgb(244, 244, 244);
+  border-radius: 50%;
+}
+
+.feedFooterImg2 {
+  margin: -0.6rem;
+}
+
+.feedFooterId {
+  padding-left: 0.8em;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.feedLetterSet {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.feedLetter {
+  padding-left: 0.5rem;
+}
+
+.feedCommentCount {
+  color: gray;
+  padding-bottom: 1rem;
+}
+
+.feedCommentSet {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedComment {
+  border: none;
+  background-color: transparent;
+  width: 28rem;
+  height: 2rem;
+}
+
+.smile {
+  font-size: 1rem;
+  color: gray;
+}

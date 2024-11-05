@@ -1,6 +1,7 @@
 import style from './App.module.css';
 import Category from './Category'; //이거 안해서 한참 고생했네... 아놔
 import Profile from './Profile';
+import Feed from './Feed';
 
 function App() {
   return (
@@ -48,6 +49,10 @@ function App() {
         <Profile profileContent={profileContent10} />
         <Profile profileContent={profileContent11} />
         <Profile profileContent={profileContent12} />
+      </div>
+
+      <div className={style.feedContainer}>
+        <Feed feedContent={feedContent1} />
       </div>
     </>
   );
@@ -154,3 +159,16 @@ const profileContent12 = {
   img: './img/profile12.jpg',
   id: 'seoroeo',
 };
+
+
+const feedContent1 = {
+  profileImg: './img/profile1.jpg',
+  feedId: 'zzz.myam',
+  feedTime: '15시간',
+  feedMainImg: './img/profile2.jpg',
+  feedFooterImg: './img/profile3.jpg',
+  feedFooterImg2: './img/profile4.jpg',
+  feedFooterId: 'cheenny',
+  feedLetter: '어쩌구 저쩌구',
+  feedCommentCount: '12',
+}
