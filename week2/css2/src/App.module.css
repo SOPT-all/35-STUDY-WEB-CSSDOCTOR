@@ -186,3 +186,58 @@ body {
   font-size: 1rem;
   color: gray;
 }
+
+.recAll {
+  width: 15rem;
+  border: solid;
+}
+
+.myProfileSet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.recText {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.recMessage {
+  color: gray;
+}
+
+.viewAll {
+  font-weight: 800;
+}
+
+.recommendSet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.myProfileImg,
+.recommendProfileImg {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.myId,
+.recId {
+  font-weight: 800;
+  padding: 0.3rem 0;
+}
+
+.recCount {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.turn,
+.recFollow {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: blue;
+}

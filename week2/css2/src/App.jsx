@@ -2,10 +2,11 @@ import style from './App.module.css';
 import Category from './Category'; //이거 안해서 한참 고생했네... 아놔
 import Profile from './Profile';
 import Feed from './Feed';
+import Recommend from './Recommed';
 
 function App() {
   return (
-    <>
+    <div>
       <h1 className={style.title}>instagram</h1>
 
       <div className={style.categoryContainer}>
@@ -53,8 +54,30 @@ function App() {
 
       <div className={style.feedContainer}>
         <Feed feedContent={feedContent1} />
+        <Feed feedContent={feedContent2} />
+        <Feed feedContent={feedContent3} />
+        <Feed feedContent={feedContent4} />
+        <Feed feedContent={feedContent5} />
+        <Feed feedContent={feedContent6} />
+        <Feed feedContent={feedContent7} />
       </div>
-    </>
+
+      <div className={style.recAll}>
+        <div className={style.myProfileSet}>
+          <img className={style.myProfileImg} src="./img/profile1.jpg" />
+          <p className={style.myId}>zzz.myam</p>
+          <p className={style.turn}>전환</p>
+        </div>
+        <div className={style.recText}>
+          <p className={style.recMessage}>회원님을 위한 추천</p>
+          <p className={style.viewAll}>모두 보기</p>
+        </div>
+
+        <div className={style.recommendContainer}>
+          <Recommend recommendContent={recommendContent1} />
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -160,15 +183,92 @@ const profileContent12 = {
   id: 'seoroeo',
 };
 
-
 const feedContent1 = {
-  profileImg: './img/profile1.jpg',
+  profileImg: './img/profile12.jpg',
   feedId: 'zzz.myam',
   feedTime: '15시간',
   feedMainImg: './img/profile2.jpg',
   feedFooterImg: './img/profile3.jpg',
   feedFooterImg2: './img/profile4.jpg',
   feedFooterId: 'cheenny',
-  feedLetter: '어쩌구 저쩌구',
+  feedLetter: '오늘은 정말 즐거운 날!😋',
   feedCommentCount: '12',
-}
+};
+
+const feedContent2 = {
+  profileImg: './img/profile11.jpg',
+  feedId: 'codusdl_',
+  feedTime: '3일',
+  feedMainImg: './img/profile2.jpg',
+  feedFooterImg: './img/profile3.jpg',
+  feedFooterImg2: './img/profile4.jpg',
+  feedFooterId: 'dkssud_qkdrk',
+  feedLetter: '이제 겨울이 왔다 너무 춥다❄️❄️',
+  feedCommentCount: '3',
+};
+
+const feedContent3 = {
+  profileImg: './img/profile10.jpg',
+  feedId: 'tpdl_tpdl',
+  feedTime: '4시간',
+  feedMainImg: './img/profile2.jpg',
+  feedFooterImg: './img/profile3.jpg',
+  feedFooterImg2: './img/profile4.jpg',
+  feedFooterId: 'wldb02_',
+  feedLetter: '친구들이랑 재미나게 놀았다!💌💌🩷',
+  feedCommentCount: '30',
+};
+
+const feedContent4 = {
+  profileImg: './img/profile9.jpg',
+  feedId: 'thisishwarang',
+  feedTime: '6일',
+  feedMainImg: './img/profile2.jpg',
+  feedFooterImg: './img/profile3.jpg',
+  feedFooterImg2: './img/profile4.jpg',
+  feedFooterId: 'gudusol',
+  feedLetter: '새로운 옷을 사서 기분이 좋다🧷',
+  feedCommentCount: '72',
+};
+
+const feedContent5 = {
+  profileImg: './img/profile8.jpg',
+  feedId: 'dlwldms',
+  feedTime: '30분',
+  feedMainImg: './img/profile2.jpg',
+  feedFooterImg: './img/profile3.jpg',
+  feedFooterImg2: './img/profile4.jpg',
+  feedFooterId: 'iammmme',
+  feedLetter: '😽💜💜',
+  feedCommentCount: '105',
+};
+
+const feedContent6 = {
+  profileImg: './img/profile7.jpg',
+  feedId: 'who_toss',
+  feedTime: '2일',
+  feedMainImg: './img/profile2.jpg',
+  feedFooterImg: './img/profile3.jpg',
+  feedFooterImg2: './img/profile4.jpg',
+  feedFooterId: 'funny_happy',
+  feedLetter: '10월 요약🍀',
+  feedCommentCount: '2',
+};
+
+const feedContent7 = {
+  profileImg: './img/profile6.jpg',
+  feedId: 'happy_cat',
+  feedTime: '12시간',
+  feedMainImg: './img/profile2.jpg',
+  feedFooterImg: './img/profile3.jpg',
+  feedFooterImg2: './img/profile4.jpg',
+  feedFooterId: 'yammy_',
+  feedLetter: '맛있는 거 잔뜩 먹기!🫒🫘',
+  feedCommentCount: '28',
+};
+
+const recommendContent1 = {
+  recommendProfileImg: './img/profile6.jpg',
+  recId: '로롸',
+  recCount: '00명',
+};
