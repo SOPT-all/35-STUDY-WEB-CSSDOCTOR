@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { PostCard } from './PostCard';
 import data from '../assets/data.json';
 
-const Main = () => {
+const Feed = () => {
     console.log(data);
     return (
         <Container>
@@ -14,7 +14,7 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Feed
 
 const Container = styled.div`
     display: grid;
