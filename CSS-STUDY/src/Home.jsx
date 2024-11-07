@@ -1,13 +1,23 @@
 import { useState } from "react";
-
 import { articles } from "./data";
 
 function Home() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isDropdownIconOpen, setDropdownIconOpen] = useState(false);
+  const [isDropdownHeader, setDropdownHeader] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
+
+  const toggleDropdownIcon = () => {
+    setDropdownIconOpen(!isDropdownIconOpen);
+  };
+
+  const toggleDropdownHeader = () => {
+    setDropdownHeader(!isDropdownHeader);
+  };
+
   return (
     <div className="home">
       {/* 헤더 */}
@@ -18,7 +28,20 @@ function Home() {
           <i className="fa-solid fa-magnifying-glass"></i>
           <span>새 글 작성</span>
           <div className="icon" />
-          <i className="fa-solid fa-caret-down"></i>
+          <i
+            className="fa-solid fa-caret-down"
+            onClick={toggleDropdownHeader}
+          ></i>
+          {/* 조건부 렌더링 */}
+          {isDropdownHeader && (
+            <div className="header-drop">
+              <p className="dropdown-item">내 벨로그</p>
+              <p className="dropdown-item">임시글</p>
+              <p className="dropdown-item">읽기 목록</p>
+              <p className="dropdown-item">설정</p>
+              <p className="dropdown-item">로그아웃</p>
+            </div>
+          )}
         </div>
       </header>
 
@@ -58,23 +81,42 @@ function Home() {
               <p className="dropdown-item">올해</p>
             </div>
           )}
-          <i className="fa-solid fa-ellipsis-vertical"></i>
+          {/* 필터링 아이콘 */}
+          <div className="filter-icon" onClick={toggleDropdownIcon}>
+            <i className="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          {isDropdownIconOpen && (
+            <div className="dropdown">
+              <p className="dropdown-item">공지사항</p>
+              <p className="dropdown-item">태그 목록</p>
+              <p className="dropdown-item">서비스 정책</p>
+              <p className="dropdown-item">Slack</p>
+              <div className="dropdown-item"></div>
+            </div>
+          )}
         </div>
       </section>
 
-      {/* 메인 컨텐츠 */}
       <main className="articles">
         {articles.map((article, index) => (
           <div key={index} className="article-card">
             <div className="article-image">이미지</div>
             <div className="article-content">
               <h2>{article.title}</h2>
-              <p>
-                {article.date} ・ {article.comments}
-              </p>
-              <p>
-                {article.author} ♥ {article.likes}
-              </p>
+              <p className="story">{article.story}</p>
+              <p className="date">{article.date}</p>
+            </div>
+
+            {/* 구분선 */}
+            <div className="separator"></div>
+
+            {/* 작성자 정보와 좋아요 */}
+            <div className="article-author-info">
+              <div className="auth">
+                <div className="profile" />
+                <p>{article.author}</p>
+              </div>
+              <p>♥ {article.likes}</p>
             </div>
           </div>
         ))}
