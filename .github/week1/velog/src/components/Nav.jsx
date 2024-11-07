@@ -89,6 +89,7 @@ const Trending = styled.div`
     gap: 7px;
     cursor: pointer;
     color: #222529;
+    font-weight: 500;
 `;
 
 const Icon = styled(FontAwesomeIcon)`
@@ -104,6 +105,7 @@ const Recent = styled.div`
     display: flex;
     gap: 7px;
     cursor: pointer;
+    font-weight: 300;
 `;
 
 const Feed = styled.div`
@@ -116,6 +118,7 @@ const RightNav = styled.div`
     display: flex;
     align-items: center;
     gap: 13px;
+    font-weight: 300;
 `;
 
 const Period = styled.div`

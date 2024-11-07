@@ -58,6 +58,10 @@ const Title = styled.header`
 
 const Logo = styled.img`
     width: 3rem;
+    
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 const Right = styled.div`
