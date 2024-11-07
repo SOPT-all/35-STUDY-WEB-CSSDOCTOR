@@ -122,7 +122,6 @@ const MyModal = styled.div`
     top: 100%;
     right: 0;
     z-index: 5;
-    /* padding-right: 80px; */
     box-shadow: 0px 0px 5px lightgray;
 `;
 
@@ -138,7 +137,6 @@ const OptionMy = styled.div`
 `;
 
 const Divider = styled.hr`
-    /* width: 270%; */
     margin: 0;
     border: none;
     border-top: 1px solid #ececec;

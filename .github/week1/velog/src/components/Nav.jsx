@@ -171,7 +171,6 @@ const OptionPeriod = styled.div`
 `;
 
 const Divider = styled.hr`
-    /* width: 270%; */
     margin: 0;
     border: none;
     border-top: 1px solid #ececec;
