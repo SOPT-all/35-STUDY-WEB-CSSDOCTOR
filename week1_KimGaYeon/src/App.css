@@ -56,6 +56,7 @@ table {
   text-align: center;
   font-size: 62.5%; /* 1rem = 10px */
   padding: 0 6.4rem;
+  background-color: #fafafa;
 }
 
 header{
@@ -118,7 +119,43 @@ header{
   flex-direction: row;
 }
 
+.rightTab{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
 
+.selectBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
+  height: 0.6rem;
+  padding: 1rem;
+  border: 0.1rem solid #aaa;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.text {
+  text-align: left;
+  flex-grow: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.icon {
+  margin-left: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.meatballBtn{
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #888;
+}
 
 /* Content 부분 시작 */
 .ContentWrapper{

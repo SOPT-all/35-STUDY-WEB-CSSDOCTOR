@@ -3,13 +3,12 @@ import './App.css'
 import IconBtn from './components/iconBtn/iconBtn'
 import TabBtn from './components/TabBtn/TabBtn';
 import Card from './components/card/card';
-import { FaBell, FaSearch, FaThumbsUp, FaClock, FaWifi} from 'react-icons/fa';
+import { FaBell, FaSearch, FaThumbsUp, FaClock, FaWifi, FaEllipsisV} from 'react-icons/fa';
 import velogLogo from './assets/velog.svg';
 // import cardData from './data.js';
 
 function App() {
  // const [count, setCount] = useState(0)
-
   return (
     <>
     <header>
@@ -43,8 +42,14 @@ function App() {
           link="/feed"
         />
       </div>
-      <div className='rightHeader'>
-
+      <div className='rightTab'>
+        <div className='selectBox'>
+          <span className="text">이번 주</span>
+          <span className="icon">▼</span>
+        </div>
+        <div className='meatballBtn'>
+          <FaEllipsisV /> 
+        </div>
       </div>
     </div>
     <div className='ContentWrapper'>
