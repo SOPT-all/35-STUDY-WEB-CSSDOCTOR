@@ -1,8 +1,9 @@
 .card {
     width: 300px;
-    border: 1px solid #ddd;
     background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.068);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 0.4rem;
   }
   
   .card:hover {
@@ -14,14 +15,14 @@
     width: 100%;
     height: 180px;
     object-fit: cover;
-    margin-bottom: 1rem;
   }
 
   .cardContentWrapper{
-    padding: 1rem;
+    padding: 1.6rem;
+    border-bottom: 0.1rem solid #f0f0f0;
   }
   .cardTitle {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 0.5rem;
@@ -29,22 +30,46 @@
   }
   
   .cardDescription {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #666;
     margin-bottom: 1rem;
     text-align: left;
+    margin-bottom: 2.4rem;
   }
   
   .cardDate{
     text-align: left;
+    font-size: 1.2rem;
+    color:#aaa;
   }
 
 
   .cardFooter {
-    padding: 1rem;
+    padding: 1rem 1.6rem;
     display: flex;
     justify-content: space-between;
-    font-size: 0.875rem;
-    color: #999;
+    font-size: 1.2rem;
+    color: #000;
+  }
+
+  .cardFooterLeft{
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;
   }
   
+  .authorImg {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.8rem;
+  }
+  .cardFooterRight{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    align-items: center;
+  }
+
