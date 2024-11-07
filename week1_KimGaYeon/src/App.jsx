@@ -7,7 +7,7 @@ import { FaBell, FaSearch, FaThumbsUp, FaClock, FaWifi, FaEllipsisV} from 'react
 import velogLogo from './assets/velog.svg';
 import Dropdown from './components/Dropdown/Dropdown';
 import { useState } from 'react';
-// import cardData from './data.js';
+import cardData from './data.js';
 
 function App() {
   const selectOptions = ['오늘', '이번 주', '이번 달', '올해'];
@@ -73,17 +73,20 @@ function App() {
     </div>
 
     <div className='ContentWrapper'>
-    {/* {cardData.map((card, index) => (
+    {cardData.map((card, index) => (
           <Card
             key={index}
             imageUrl={card.imageUrl}
             title={card.title}
             description={card.description}
+            authorImg = {card.authorImg}
             author={card.author}
             date={card.date}
+            comment= {card.comment}
+            like ={card.like}
           />
-        ))} */}
-      <Card
+        ))}
+      {/* <Card
         imageUrl="public/img/1.jpg"
         title="게시물 제목"
         description="게시물 요약 내용을 여기에 입력하세요."
@@ -92,7 +95,7 @@ function App() {
         date="2024-10-31"
         comment= {9}
         like ={12}
-      />
+      /> */}
     </div>
     </>
   )
