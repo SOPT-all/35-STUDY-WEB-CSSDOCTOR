@@ -1,8 +1,8 @@
 /* IconButton.module.css */
 .button {
     position: relative;
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -18,7 +18,7 @@
   }
   
   .icon {
-    font-size: 1.2rem; /* 아이콘 크기를 조절하세요 */
+    font-size: 2.4rem; /* 아이콘 크기를 조절하세요 */
     color: #333;
   }
   

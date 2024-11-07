@@ -3,15 +3,15 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.6rem;
+    padding: 1.2rem;
     background-color: transparent; /* 배경을 투명색으로 설정 */
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     transition: color 0.3s; /* 부드러운 전환 효과 */
     color: gray; /* 비활성화 상태의 텍스트 색상 */
 }
 
 .tabBtn .icon {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: gray; /* 비활성화 상태의 아이콘 색상 */
     margin-right: 0.8rem; /* 아이콘과 텍스트 사이 간격 */
 }
