@@ -10,7 +10,7 @@ function Header() {
     const dropMyModal = () => setOpenMyModal(!openMyModal);
 
     return (
-        <Container>
+        <>
             <Title>
                 <div>
                     <Logo src="public/image/velog_logo.svg" alt="velog logo" />
@@ -40,16 +40,13 @@ function Header() {
                     </MyModal>
                 )}
             </Title>
-        </Container>
+        </>
         
     )
 }
 
 export default Header
 
-const Container = styled.div`
-    margin: 0 35px;
-`;
 
 const Title = styled.header`
     display: flex;

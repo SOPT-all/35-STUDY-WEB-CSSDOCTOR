@@ -44,7 +44,7 @@ function Nav() {
                 <PeriodModal>
                     <OptionPeriod>오늘</OptionPeriod>
                     <Divider />
-                    <OptionPeriod>이번 주</OptionPeriod>
+                    <OptionPeriod style={{ color: "#55B589" }}>이번 주</OptionPeriod>
                     <Divider />
                     <OptionPeriod>이번 달</OptionPeriod>
                     <Divider />
@@ -72,7 +72,6 @@ function Nav() {
 export default Nav
 
 const Container = styled.nav`
-    margin: 0 35px;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -82,13 +81,14 @@ const Container = styled.nav`
 const LeftNav = styled.div`
     display: flex;
     gap: 15px;
-    color: grey;
+    color: #878E95;
 `;
 
 const Trending = styled.div`
     display: flex;
     gap: 7px;
     cursor: pointer;
+    color: #222529;
 `;
 
 const Icon = styled(FontAwesomeIcon)`
@@ -121,6 +121,7 @@ const RightNav = styled.div`
 const Period = styled.div`
     cursor: pointer;
     font-size: 0.6rem;
+    font-weight: bold;
     padding: 4px 7px;
     border-radius: 5px;
     display: flex;
@@ -129,6 +130,10 @@ const Period = styled.div`
     color: #4A5056;
     box-shadow: 0px 0px 5px lightgray;
     background-color: white;
+
+    &:hover {
+        color: #757A7F;
+    }
 `;
 
 const Dropdown = styled(FontAwesomeIcon)`
@@ -137,7 +142,6 @@ const Dropdown = styled(FontAwesomeIcon)`
 
 const More = styled.div`
     display: flex;
-    /* justify-content: ; */
 `;
 
 const MoreIcon = styled(FontAwesomeIcon)`
@@ -150,7 +154,7 @@ const PeriodModal = styled.div`
     position: absolute;
     top: 100%;
     right: 0;
-    /* padding-right: 80px; */
+    z-index: 5;
     box-shadow: 0px 0px 5px lightgray;
 `;
 
@@ -158,6 +162,7 @@ const OptionPeriod = styled.div`
     padding: 8px 80px 8px 10px;  
     font-size: 0.6rem;
     background-color: white;
+    font-weight: bold;
 
     &:hover {
         background-color: #F8F9FA;
@@ -176,7 +181,7 @@ const MoreModal = styled.div`
     position: absolute;
     top: 100%;
     right: 0;
-    /* padding-right: 80px; */
+    z-index: 5;
     box-shadow: 0px 0px 5px lightgray;
 `;
 
@@ -184,6 +189,7 @@ const OptionMore = styled.div`
     padding: 8px 63px 8px 10px;  
     font-size: 0.6rem;
     background-color: white;
+    font-weight: bold;
 
     &:hover {
         background-color: #F8F9FA;
