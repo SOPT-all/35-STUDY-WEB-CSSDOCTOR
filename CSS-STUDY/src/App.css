@@ -1,0 +1,237 @@
+/* 전체 레이아웃 설정 */
+.home {
+  padding: 0 3rem;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.header h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-buttons span {
+  width: 6rem;
+  height: 2rem;
+  padding: 0 0.06rem;
+
+  border: 1px solid #555;
+  border-radius: 40px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem; /*높이와 동일하게 설정해 수직 가운데 정렬*/
+}
+
+.icon {
+  width: 2.8rem;
+  height: 2.5rem;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.header-drop {
+  position: absolute;
+  background-color: white;
+
+  /* 드롭다운 위치조정 */
+  margin-left: 5rem;
+  margin-top: 14rem;
+
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  font-size: small;
+  font-weight: bold;
+
+  z-index: 2;
+}
+
+/* 메뉴바 */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 링크 */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding: 1rem 0;
+}
+
+.nav > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.clicked {
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.4rem;
+}
+
+.not-clicked {
+  padding-bottom: 0.4rem;
+}
+
+/* 필터링 */
+.filter-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  width: 6rem;
+  height: 2rem;
+  padding: 0.2rem 0.5rem;
+
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  font-size: small;
+}
+
+.filter:hover {
+  opacity: 0.7;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+
+  /* 드롭다운 위치조정 */
+  margin-top: 11.5rem;
+  margin-left: -2rem;
+
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  font-size: small;
+  font-weight: bold;
+
+  z-index: 2;
+}
+
+.dropdown-item {
+  width: 10rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* 메인 */
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  padding: 2.5rem 0;
+}
+
+/* 메인-카드 스타일 */
+.article-card {
+  width: 20rem;
+  background-color: white;
+  transition: transform 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-image {
+  width: 100%;
+  height: 10rem;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.article-content {
+  padding: 1.3rem;
+}
+
+.article-content h2 {
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.article-content .story {
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.article-content .date {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.article-author-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 1.3rem;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile {
+  width: 2rem;
+  height: 2rem;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+}
