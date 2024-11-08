@@ -4,7 +4,6 @@ import { PostCard } from './PostCard';
 import data from '../assets/data.json';
 
 const Feed = () => {
-    console.log(data);
     return (
         <Container>
             {data.map((post) => (
