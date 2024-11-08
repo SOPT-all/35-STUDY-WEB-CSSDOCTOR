@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "코드 두 줄로 다크모드 지원하기",
+        "contents": "다크 모드를 지원하려다 보면 예상보다 많은 공수가 드는 경우가 많습니다.",
+        "date": "2024년 11월 1일",
+        "comment": 3,
+        "writer": "이소희",
+        "like": 13,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 2,
+        "title": "'대규모 트래픽 경험' 이라는 환상 - 1부",
+        "contents": "어떤 기대가 있었는지는 모르겠지만, 다 듣고나면 환상이 깨질지도",
+        "date": "2024년 11월 2일",
+        "comment": 13,
+        "writer": "차은우",
+        "like": 123,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 3,
+        "title": "[번역] 동시성, 병렬성, 그리고 자바스크립트에 대한 이해",
+        "contents": "원문 : https://www.rugu.dev/en/blog/concurrency-and-parallelism/",
+        "date": "2024년 11월 3일",
+        "comment": 0,
+        "writer": "송강",
+        "like": 9,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 4,
+        "title": "(번역) CSS content-visibility를 이용해",
+        "contents": "content-visibility는 레이아웃과 페인트의 관점에서 DOM의 특정 부분을 “숨길” 수 있는 새로운 CSS 기능입니다.",
+        "date": "2024년 11월 4일",
+        "comment": 5,
+        "writer": "김민규",
+        "like": 63,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 5,
+        "title": "[번역] 영국의 조약이 .io 도메인의 종말을 의미할 수 있는 이유",
+        "contents": "영국이 체결한 조약으로 인해 .io 도메인이 사라질 수도 있다고 합니다.",
+        "date": "2024년 11월 5일",
+        "comment": 22,
+        "writer": "전정국",
+        "like": 326,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 6,
+        "title": "문돌이 비전공자가 5년 동안 다닌 회사",
+        "contents": "치열했던 1년 간의 공부 끝에 드디어 IT기업에 합격하였다.",
+        "date": "2024년 11월 6일",
+        "comment": 8,
+        "writer": "이주연",
+        "like": 13,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 7,
+        "title": "혹시.. 기술 면접 준비는 잘 돼가시나요?",
+        "contents": "스트레스 받는 면접 준비, 이젠 매일메일 해보세요!",
+        "date": "2024년 11월 7일",
+        "comment": 24,
+        "writer": "김선우",
+        "like": 17,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 8,
+        "title": "MySQL 트러블슈팅 회고 (feat. 대소문자 구분)",
+        "contents": "진짜 찾기 힘들었다",
+        "date": "2024년 11월 8일",
+        "comment": 3,
+        "writer": "김영훈",
+        "like": 3,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 9,
+        "title": "static 메서드는 언제 사용해야 할까?",
+        "contents": "static 메서드와 인스턴스 메서드의 차이점을 알고, 필요할 때 적절하게 사용할 수 있도록 고민해볼 점들을 정리했습니다.",
+        "date": "2024년 11월 9일",
+        "comment": 23,
+        "writer": "박성훈",
+        "like": 18,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 10,
+        "title": "2주간 퇴근 후 혼자 개발해 사용자 400명 모으기",
+        "contents": "제가 개발을 사랑하게 된 사이드 프로젝트 경험을 공유합니다. 어쩌면 당신도?",
+        "date": "2024년 11월 10일",
+        "comment": 9,
+        "writer": "이종석",
+        "like": 42,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 11,
+        "title": "github 커밋하고 펫 키우기",
+        "contents": "🐧🐤 github 프로필에 귀여운 펫들을 자랑해보세요",
+        "date": "2024년 11월 11일",
+        "comment": 0,
+        "writer": "서강준",
+        "like": 36,
+        "img": "public/img/thumbnail.jpg"
+    },
+    {
+        "id": 12,
+        "title": "샌프란시스코 출장 후기",
+        "contents": "잊지못할 경험",
+        "date": "2024년 11월 12일",
+        "comment": 7,
+        "writer": "조승연",
+        "like": 57,
+        "img": "public/img/thumbnail.jpg"
+    }
+]
