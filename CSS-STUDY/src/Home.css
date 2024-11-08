@@ -22,6 +22,18 @@
   gap: 1rem;
 }
 
+.header-buttons i:nth-child(1),
+.header-buttons i:nth-child(2) {
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons i:nth-child(1):hover,
+.header-buttons i:nth-child(2):hover {
+  background-color: #f0f0f0;
+}
+
 .header-buttons span {
   width: 6rem;
   height: 2rem;
@@ -34,6 +46,11 @@
   font-weight: bold;
   text-align: center;
   line-height: 2rem; /*높이와 동일하게 설정해 수직 가운데 정렬*/
+}
+
+.header-buttons span:hover {
+  background-color: #555; /* 호버 시 회색 배경색 */
+  color: #fff; /* 호버 시 텍스트 색상 변경 */
 }
 
 .icon {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { articles } from "./data";
+import "./Home.css";
 
 function Home() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
