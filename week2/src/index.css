@@ -147,7 +147,8 @@ b {
   font-weight: 700;
 }
 
-input {
+input,
+button {
   border: none;
   outline: none;
 }

@@ -2,6 +2,8 @@ main {
   margin-left: auto;
   width: calc(100% - 24rem);
   height: 100vh;
+  display: grid;
+  grid-template-columns: 6.5fr 3.5fr;
 }
 
 main .feed_section {
@@ -9,5 +11,4 @@ main .feed_section {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 65%;
 }

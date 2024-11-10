@@ -1,0 +1,60 @@
+.story_container {
+  margin: 2rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.story_list {
+  display: flex;
+  gap: 1rem;
+}
+
+.story_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 6.6rem;
+  text-align: center;
+  overflow: hidden;
+}
+.story_item img {
+  width: 5.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.story_item p {
+  width: 100%;
+  font-size: 1.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.nav_button {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav_button:first-of-type {
+  left: 1.5rem;
+}
+
+.nav_button:last-of-type {
+  right: 1.5rem;
+}
+
+.nav_button:disabled {
+  display: none;
+}
