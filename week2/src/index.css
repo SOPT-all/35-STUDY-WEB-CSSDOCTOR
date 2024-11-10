@@ -133,6 +133,7 @@ table {
 
 * {
   box-sizing: border-box;
+  font-size: 1.5rem;
 }
 
 html,
@@ -140,4 +141,13 @@ body {
   font-size: 62.5%;
   scrollbar-width: none;
   scroll-behavior: smooth;
+}
+
+b {
+  font-weight: 700;
+}
+
+input {
+  border: none;
+  outline: none;
 }
