@@ -1,0 +1,72 @@
+[
+  {
+    "postId": 1,
+    "username": "whee_inthemood",
+    "profileImage": "src/assets/profile/0.jpg",
+    "image": "src/assets/feed/1.jpg",
+    "likes": 105000,
+    "content": "콧바람~",
+    "comments": 352,
+    "createdAt": "2024-11-01T15:45:00Z"
+  },
+  {
+    "postId": 2,
+    "username": "whee_inthemood",
+    "profileImage": "src/assets/profile/0.jpg",
+    "image": "src/assets/feed/2.jpg",
+    "likes": 85000,
+    "content": "휘드래곤.....",
+    "comments": 316,
+    "createdAt": "2024-11-06T08:30:00Z"
+  },
+  {
+    "postId": 3,
+    "username": "whee_inthemood",
+    "profileImage": "src/assets/profile/0.jpg",
+    "image": "src/assets/feed/3.jpg",
+    "likes": 113000,
+    "content": "미공개컷 쏜다",
+    "comments": 465,
+    "createdAt": "2024-11-09T11:15:00Z"
+  },
+  {
+    "postId": 4,
+    "username": "whee_inthemood",
+    "profileImage": "src/assets/profile/0.jpg",
+    "image": "src/assets/feed/4.jpg",
+    "likes": 101000,
+    "content": "캠핑하는 휘니핑",
+    "comments": 316,
+    "createdAt": "2024-11-08T11:15:00Z"
+  },
+  {
+    "postId": 5,
+    "username": "whee_inthemood",
+    "profileImage": "src/assets/profile/0.jpg",
+    "image": "src/assets/feed/5.jpg",
+    "likes": 80000,
+    "content": "B컷",
+    "comments": 388,
+    "createdAt": "2024-10-25T11:15:00Z"
+  },
+  {
+    "postId": 6,
+    "username": "whee_inthemood",
+    "profileImage": "src/assets/profile/0.jpg",
+    "image": "src/assets/feed/6.jpg",
+    "likes": 99000,
+    "content": "꼼장어 좋아하세요?",
+    "comments": 401,
+    "createdAt": "2024-10-31T11:15:00Z"
+  },
+  {
+    "postId": 7,
+    "username": "whee_inthemood",
+    "profileImage": "src/assets/profile/0.jpg",
+    "image": "src/assets/feed/7.jpg",
+    "likes": 117000,
+    "content": "쉬어갑니ㄷr..",
+    "comments": 339,
+    "createdAt": "2024-10-25T11:15:00Z"
+  }
+]
