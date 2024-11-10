@@ -1,0 +1,89 @@
+.profile_section {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 31.5rem;
+}
+
+@media (max-width: 1160px) {
+  .profile_section {
+    display: none;
+  }
+}
+
+.recommend_list {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.recommend_title {
+  display: flex;
+  justify-content: space-between;
+}
+.recommend_title b {
+  font-size: 1.4rem;
+  color: gray;
+}
+.recommend_title span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    color: gray;
+  }
+}
+
+.profile_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.profile_item img {
+  width: 4.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.profile_item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  font-size: 1.4rem;
+}
+.profile_item div b {
+  cursor: pointer;
+}
+.profile_item div p {
+  color: gray;
+}
+.profile_item span {
+  font-weight: 600;
+  text-align: end;
+  color: #0095f6;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.footer {
+  font-size: 1.2rem;
+  line-height: 150%;
+  color: lightgray;
+}
+.footer a {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer p {
+  margin-top: 2rem;
+}

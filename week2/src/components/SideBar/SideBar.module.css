@@ -1,0 +1,28 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24rem;
+  height: 100vh;
+  border-right: 1px solid lightgray;
+}
+
+nav .logo {
+  margin-bottom: 2rem;
+  width: 12rem;
+}
+
+nav .section ul li {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+}
+nav .section ul li i {
+  width: 2rem;
+  height: auto;
+}
