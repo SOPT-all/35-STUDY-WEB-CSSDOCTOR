@@ -6,63 +6,67 @@ import Recommend from './Recommed';
 
 function App() {
   return (
-    <div>
-      <h1 className={style.title}>instagram</h1>
+    <>
+      <section className={style.Left}>
+        <h1 className={style.title}>instagram</h1>
 
-      <div className={style.categoryContainer}>
-        <Category categoryContent={categoryContent1} />
-        <Category categoryContent={categoryContent2} />
-        <Category categoryContent={categoryContent3} />
-        <Category categoryContent={categoryContent4} />
-        <Category categoryContent={categoryContent5} />
-        <Category categoryContent={categoryContent6} />
-        <Category categoryContent={categoryContent7} />
-        <Category categoryContent={categoryContent8} />
-      </div>
-
-      <div className={style.categoryFooter}>
-        <div className={style.categoryThreads}>
-          <span className={`material-symbols-outlined ${style.threadsIcon}`}>
-            alternate_email
-          </span>
-          <p>Threads</p>
+        <div className={style.categoryContainer}>
+          <Category categoryContent={categoryContent1} />
+          <Category categoryContent={categoryContent2} />
+          <Category categoryContent={categoryContent3} />
+          <Category categoryContent={categoryContent4} />
+          <Category categoryContent={categoryContent5} />
+          <Category categoryContent={categoryContent6} />
+          <Category categoryContent={categoryContent7} />
+          <Category categoryContent={categoryContent8} />
         </div>
-        <div className={style.categoryMore}>
-          <span className={`material-symbols-outlined ${style.moreIcon}`}>
-            menu
-          </span>
-          <p>더보기</p>
+
+        <div className={style.categoryFooter}>
+          <div className={style.categoryThreads}>
+            <span className={`material-symbols-outlined ${style.threadsIcon}`}>
+              alternate_email
+            </span>
+            <p>Threads</p>
+          </div>
+          <div className={style.categoryMore}>
+            <span className={`material-symbols-outlined ${style.moreIcon}`}>
+              menu
+            </span>
+            <p>더보기</p>
+          </div>
         </div>
-      </div>
 
-      <div className={style.line}></div>
+        <div className={style.line}></div>
+      </section>
 
-      <div className={style.profileContainer}>
-        <Profile profileContent={profileContent1} />
-        <Profile profileContent={profileContent2} />
-        <Profile profileContent={profileContent3} />
-        <Profile profileContent={profileContent4} />
-        <Profile profileContent={profileContent5} />
-        <Profile profileContent={profileContent6} />
-        <Profile profileContent={profileContent7} />
-        <Profile profileContent={profileContent8} />
-        <Profile profileContent={profileContent9} />
-        <Profile profileContent={profileContent10} />
-        <Profile profileContent={profileContent11} />
-        <Profile profileContent={profileContent12} />
-      </div>
+      <section className={style.main}>
+        <div className={style.profileContainer}>
+          <Profile profileContent={profileContent1} />
+          <Profile profileContent={profileContent2} />
+          <Profile profileContent={profileContent3} />
+          <Profile profileContent={profileContent4} />
+          <Profile profileContent={profileContent5} />
+          <Profile profileContent={profileContent6} />
+          <Profile profileContent={profileContent7} />
+          <Profile profileContent={profileContent8} />
+          <Profile profileContent={profileContent9} />
+          <Profile profileContent={profileContent10} />
+          <Profile profileContent={profileContent11} />
+          <Profile profileContent={profileContent12} />
+        </div>
 
-      <div className={style.feedContainer}>
-        <Feed feedContent={feedContent1} />
-        <Feed feedContent={feedContent2} />
-        <Feed feedContent={feedContent3} />
-        <Feed feedContent={feedContent4} />
-        <Feed feedContent={feedContent5} />
-        <Feed feedContent={feedContent6} />
-        <Feed feedContent={feedContent7} />
-      </div>
+        <div className={style.feedContainer}>
+          <Feed feedContent={feedContent1} />
+          <Feed feedContent={feedContent2} />
+          <Feed feedContent={feedContent3} />
+          <Feed feedContent={feedContent4} />
+          <Feed feedContent={feedContent5} />
+          <Feed feedContent={feedContent6} />
+          <Feed feedContent={feedContent7} />
+        </div>
+      </section>
 
-      <div className={style.recAll}>
+      <section className={style.right}>
         <div className={style.myProfileSet}>
           <img className={style.myProfileImg} src="./img/profile1.jpg" />
           <p className={style.myId}>zzz.myam</p>
@@ -75,9 +79,19 @@ function App() {
 
         <div className={style.recommendContainer}>
           <Recommend recommendContent={recommendContent1} />
+          <Recommend recommendContent={recommendContent2} />
+          <Recommend recommendContent={recommendContent3} />
+          <Recommend recommendContent={recommendContent4} />
+          <Recommend recommendContent={recommendContent5} />
         </div>
-      </div>
-    </div>
+        <br />
+        <p className={style.etc}>
+          소개.도움말.홍보 센터.API.채용정보.
+          <br /> <br />
+          개인정보처리방침.약관.위치.언어.Meta Verified
+        </p>
+      </section>
+    </>
   );
 }
 
@@ -95,7 +109,7 @@ const categoryContent2 = {
 
 const categoryContent3 = {
   icon: <span className="material-symbols-outlined">explore</span>,
-  categoryName: '탐색 탭',
+  categoryName: '탐색',
 };
 
 const categoryContent4 = {
@@ -187,7 +201,7 @@ const feedContent1 = {
   profileImg: './img/profile12.jpg',
   feedId: 'zzz.myam',
   feedTime: '15시간',
-  feedMainImg: './img/profile2.jpg',
+  feedMainImg: './img/profile10.jpg',
   feedFooterImg: './img/profile3.jpg',
   feedFooterImg2: './img/profile4.jpg',
   feedFooterId: 'cheenny',
@@ -199,7 +213,7 @@ const feedContent2 = {
   profileImg: './img/profile11.jpg',
   feedId: 'codusdl_',
   feedTime: '3일',
-  feedMainImg: './img/profile2.jpg',
+  feedMainImg: './img/profile9.jpg',
   feedFooterImg: './img/profile3.jpg',
   feedFooterImg2: './img/profile4.jpg',
   feedFooterId: 'dkssud_qkdrk',
@@ -211,7 +225,7 @@ const feedContent3 = {
   profileImg: './img/profile10.jpg',
   feedId: 'tpdl_tpdl',
   feedTime: '4시간',
-  feedMainImg: './img/profile2.jpg',
+  feedMainImg: './img/profile8.jpg',
   feedFooterImg: './img/profile3.jpg',
   feedFooterImg2: './img/profile4.jpg',
   feedFooterId: 'wldb02_',
@@ -223,7 +237,7 @@ const feedContent4 = {
   profileImg: './img/profile9.jpg',
   feedId: 'thisishwarang',
   feedTime: '6일',
-  feedMainImg: './img/profile2.jpg',
+  feedMainImg: './img/profile12.jpg',
   feedFooterImg: './img/profile3.jpg',
   feedFooterImg2: './img/profile4.jpg',
   feedFooterId: 'gudusol',
@@ -247,7 +261,7 @@ const feedContent6 = {
   profileImg: './img/profile7.jpg',
   feedId: 'who_toss',
   feedTime: '2일',
-  feedMainImg: './img/profile2.jpg',
+  feedMainImg: './img/profile5.jpg',
   feedFooterImg: './img/profile3.jpg',
   feedFooterImg2: './img/profile4.jpg',
   feedFooterId: 'funny_happy',
@@ -259,7 +273,7 @@ const feedContent7 = {
   profileImg: './img/profile6.jpg',
   feedId: 'happy_cat',
   feedTime: '12시간',
-  feedMainImg: './img/profile2.jpg',
+  feedMainImg: './img/profile4.jpg',
   feedFooterImg: './img/profile3.jpg',
   feedFooterImg2: './img/profile4.jpg',
   feedFooterId: 'yammy_',
@@ -269,6 +283,30 @@ const feedContent7 = {
 
 const recommendContent1 = {
   recommendProfileImg: './img/profile6.jpg',
-  recId: '로롸',
-  recCount: '00명',
+  recId: 'hyo_bbak',
+  recCount: 'sb.5c님 외 13명이 팔로우 합니다',
+};
+
+const recommendContent2 = {
+  recommendProfileImg: './img/profile4.jpg',
+  recId: 'rooom.mm',
+  recCount: 'hyo_bb님 외 2명이 팔로우 합니다',
+};
+
+const recommendContent3 = {
+  recommendProfileImg: './img/profile3.jpg',
+  recId: 'la_lee99',
+  recCount: 'love님 외 5명이 팔로우 합니다',
+};
+
+const recommendContent4 = {
+  recommendProfileImg: './img/profile2.jpg',
+  recId: 'ahnhe_85',
+  recCount: 'happy70님 외 6명이 팔로우 합니다',
+};
+
+const recommendContent5 = {
+  recommendProfileImg: './img/profile1.jpg',
+  recId: 'teams_oo',
+  recCount: 'sb.5c님 외 10명이 팔로우 합니다',
 };
