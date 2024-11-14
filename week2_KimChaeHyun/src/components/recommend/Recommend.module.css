@@ -1,0 +1,29 @@
+.recommendWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.recommendTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+
+  font-weight: 700;
+
+  h2 {
+    color: #888;
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #888;
+    }
+  }
+}

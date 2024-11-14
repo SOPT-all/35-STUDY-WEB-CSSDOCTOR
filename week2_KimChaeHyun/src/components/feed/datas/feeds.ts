@@ -1,0 +1,68 @@
+import feed from "@assets/feed.jpg";
+import feedProfile from "@assets/feedProfile.jpg";
+
+export const feedData = [
+  {
+    profileImg: feedProfile,
+    username: "leeeu.j",
+    postImg: feed,
+    caption: "웃추 🥶",
+    likes: "2.7만개",
+    time: "5일 전",
+    comments: "댓글 45개 모두 보기",
+  },
+  {
+    profileImg: feedProfile,
+    username: "leeeu.j",
+    postImg: feed,
+    caption: "웃추 🥶",
+    likes: "2.7만개",
+    time: "5일 전",
+    comments: "댓글 45개 모두 보기",
+  },
+  {
+    profileImg: feedProfile,
+    username: "leeeu.j",
+    postImg: feed,
+    caption: "웃추 🥶",
+    likes: "2.7만개",
+    time: "5일 전",
+    comments: "댓글 45개 모두 보기",
+  },
+  {
+    profileImg: feedProfile,
+    username: "leeeu.j",
+    postImg: feed,
+    caption: "웃추 🥶",
+    likes: "2.7만개",
+    time: "5일 전",
+    comments: "댓글 45개 모두 보기",
+  },
+  {
+    profileImg: feedProfile,
+    username: "leeeu.j",
+    postImg: feed,
+    caption: "웃추 🥶",
+    likes: "2.7만개",
+    time: "5일 전",
+    comments: "댓글 45개 모두 보기",
+  },
+  {
+    profileImg: feedProfile,
+    username: "leeeu.j",
+    postImg: feed,
+    caption: "웃추 🥶",
+    likes: "2.7만개",
+    time: "5일 전",
+    comments: "댓글 45개 모두 보기",
+  },
+  {
+    profileImg: feedProfile,
+    username: "leeeu.j",
+    postImg: feed,
+    caption: "웃추 🥶",
+    likes: "2.7만개",
+    time: "5일 전",
+    comments: "댓글 45개 모두 보기",
+  },
+];

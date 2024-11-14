@@ -1,0 +1,16 @@
+export { default as IcAdd } from "./IcAdd";
+export { default as IcArrowLeft } from "./IcArrowLeft";
+export { default as IcArrowRight } from "./IcArrowRight";
+export { default as IcBurger } from "./IcBurger";
+export { default as IcComment } from "./IcComment";
+export { default as IcExplore } from "./IcExplore";
+export { default as IcHome } from "./IcHome";
+export { default as IcKeep } from "./IcKeep";
+export { default as IcLike } from "./IcLike";
+export { default as IcMore } from "./IcMore";
+export { default as IcNew } from "./IcNew";
+export { default as IcReels } from "./IcReels";
+export { default as IcSearch } from "./IcSearch";
+export { default as IcShare } from "./IcShare";
+export { default as IcTextlogo } from "./IcTextlogo";
+export { default as IcThread } from "./IcThread";

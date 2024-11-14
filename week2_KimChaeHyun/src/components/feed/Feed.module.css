@@ -1,0 +1,193 @@
+.feed {
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  font-size: 1.6rem;
+}
+
+.profileImg {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+
+  border-radius: 50%;
+}
+
+.username {
+  flex: 1;
+
+  font-weight: bold;
+  font-size: 1rem;
+
+  span {
+    color: #555;
+  }
+}
+
+.moreButton {
+  font-size: 1.5rem;
+
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.iconHover {
+  cursor: pointer;
+
+  &:hover {
+    color: #555;
+  }
+}
+
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carouselContainer {
+  display: flex;
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  transition: transform 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.carouselItem {
+  min-width: 100%;
+  aspect-ratio: 3/4;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.leftButton,
+.rightButton {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.leftButton {
+  left: 1rem;
+}
+
+.rightButton {
+  right: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+
+  transform: translateX(-50%);
+}
+
+.indicator {
+  width: 0.8rem;
+  height: 0.8rem;
+
+  background-color: #555;
+  border-radius: 50%;
+
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  font-size: 2.4rem;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.saveButton {
+  margin-right: 0;
+}
+
+.details {
+  padding: 0.5rem 0;
+}
+
+.likes {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  font-weight: 700;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.caption {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.moreCaption {
+  color: #777;
+  font-size: 0.9rem;
+
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.comments {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0;
+
+  color: #777;
+  font-size: 0.9rem;
+
+  background: none;
+  cursor: pointer;
+  border: none;
+}
