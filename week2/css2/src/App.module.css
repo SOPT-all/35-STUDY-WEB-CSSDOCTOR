@@ -1,0 +1,303 @@
+@import url('./reset.css');
+
+body {
+  background-color: rgb(244, 244, 244);
+}
+
+.Left {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgb(244, 244, 244);
+  width: 15rem;
+  height: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 2rem 0 0 2rem;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: column; /*세로로 정렬하고 갭 주고 싶었는데 이렇게 하면 되는 군*/
+  gap: 1rem;
+  padding: 2rem;
+  position: relative; /*.profileContainer의 부모요소로서 준 것*/
+}
+
+.categorySet {
+  display: flex;
+  width: 5rem;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.3rem 7rem 0.3rem 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.categorySet:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+.categoryFooter {
+  position: fixed;
+  bottom: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.categoryThreads {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categoryMore {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.line {
+  border-left: thin solid gray;
+  height: 100vh;
+  left: 15rem;
+  position: absolute;
+  top: 0; /*이거 안하니까 선이 자꾸 밑에 있어서 짜증났음*/
+}
+
+.img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileBorder {
+  border: 0.2rem solid rgb(232, 119, 102);
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.id {
+  font-size: 0.8rem;
+}
+
+.profileSet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.profileContainer {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 30rem;
+  width: 45rem;
+  height: 8rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  white-space: nowrap; /*이걸 안 하면 스크롤바를 없앴을 때 스크롤이 안 됨*/
+}
+
+.feedContainer {
+  position: absolute;
+  top: 10rem;
+  left: 40rem;
+}
+
+.feedHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0 0.6rem 0;
+  justify-content: space-between;
+}
+
+.feedHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.feedTime {
+  color: gray;
+}
+
+.profileImg {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.feedId {
+  font-weight: 600;
+}
+
+.feedMainImg {
+  width: 30rem;
+}
+
+.feedIcon {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedFooter {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.feedFooterImg,
+.feedFooterImg2 {
+  width: 1.2rem;
+  border-radius: 50%;
+  border: 0.2rem solid rgb(244, 244, 244);
+  border-radius: 50%;
+}
+
+.feedFooterImg2 {
+  margin: -0.6rem;
+}
+
+.feedFooterId {
+  padding-left: 0.8em;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.feedLetterSet {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.feedLetter {
+  padding-left: 0.5rem;
+}
+
+.feedCommentCount {
+  color: gray;
+  padding-bottom: 1rem;
+}
+
+.feedCommentSet {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedComment {
+  border: none;
+  background-color: transparent;
+  width: 28rem;
+  height: 2rem;
+}
+
+.smile {
+  font-size: 1rem;
+  color: gray;
+}
+
+.myProfileSet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.recText {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.recMessage {
+  color: gray;
+}
+
+.viewAll {
+  font-weight: 800;
+}
+
+.recommendSet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.myProfileImg,
+.recommendProfileImg {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.myId,
+.recId {
+  font-weight: 800;
+  padding: 0.3rem 0;
+}
+
+.recCount {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.turn,
+.recFollow {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: blue;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  top: 3rem;
+  left: 82rem;
+  width: 20rem;
+  padding: 0 4rem 0 0;
+}
+
+.heart:hover,
+.comment:hover,
+.send:hover,
+.bookmark:hover {
+  color: gray;
+}
+
+.turn,
+.viewAll,
+.recFollow {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+.turn:hover,
+.recFollow:hover {
+  color: rgb(156, 156, 255);
+}
+
+.viewAll:hover {
+  color: gray;
+}
+
+.recommendContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.etc {
+  color: rgb(177, 177, 177);
+  font-size: 0.85rem;
+}
