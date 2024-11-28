@@ -1,0 +1,23 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  align-content: center;
+  text-align: center;
+  height: 6.3rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  gap: 4.2rem;
+  font-size: 1.3rem;
+}
