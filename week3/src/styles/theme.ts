@@ -4,6 +4,9 @@ const theme = {
     black: "#000000",
     gray01: "#666666",
     gray02: "#414141",
+    gray03: "#5c5c5c",
+    gray04: "#3d3d3d",
+    gray05: "#c2c2c2",
     red01: "#FF3228",
   },
 
@@ -20,6 +23,18 @@ const theme = {
       fontSize: "13px",
       lineHeight: 1.17,
       letterSpacing: "-0.24px",
+    },
+    title01: {
+      fontFamily: "Pretendard",
+      fontSize: "31px",
+      fontWeight: "bold",
+      lineHeight: "calc(45 / 31)",
+    },
+    primary: {
+      fontFamily: "Pretendard",
+      fontSize: "12px",
+      fontWeight: 400,
+      lineHeight: "16px",
     },
   },
 };
