@@ -13,7 +13,7 @@ const ResultSection = () => {
             <img src={dropdown} alt='dropdown' />
           </div>
           <div className={styles.sub_filter}>
-            <span>중간</span>
+            <span>이미지 크기</span>
             <img src={dropdown} alt='dropdown' />
           </div>
         </div>
