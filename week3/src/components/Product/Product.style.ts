@@ -1,10 +1,7 @@
 import { css, Theme } from "@emotion/react";
+import theme from "../../styles/theme";
 
 export const mainStyle = (theme: Theme) => css`
-  /* max-width: unset;
-  flex: 1;
-  width: 100%; */
-  /* width: 100%; */
   padding: 0 4rem;
 
   h1 {
@@ -17,8 +14,8 @@ export const mainStyle = (theme: Theme) => css`
 
 export const wrapper = css`
   display: flex;
+  justify-content: center;
   width: 100%;
-  /* justify-content: space-between; */
 `;
 
 export const searchFilter = (theme: Theme) => css`
@@ -78,10 +75,7 @@ export const barStyle = (theme: Theme) => css`
   justify-content: space-between;
   width: 100%;
   ${theme.fonts.primary}
-
-  p {
-    /* ${theme.fonts.primary} */
-  }
+  cursor: pointer;
 
   div {
     display: flex;
@@ -97,7 +91,7 @@ export const barStyle = (theme: Theme) => css`
     align-items: center;
     width: 11.5rem;
     height: 3.2rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem 0 1rem;
     border: 1px solid ${theme.colors.gray05};
     color: ${theme.colors.gray03};
   }
@@ -109,10 +103,62 @@ export const barStyle = (theme: Theme) => css`
 `;
 
 export const productStyle = css`
-  margin-right: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 2rem;
+
+  li {
+    padding-top: 4rem;
+  }
+
   img {
+    margin-bottom: 1.2rem;
     width: 22.4rem;
     height: 29.9rem;
-    padding-top: 4rem;
+    cursor: pointer;
+  }
+
+  .wishlist {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0.9rem 0 0 18.2rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  h4 {
+    ${theme.fonts.brandName}
+  }
+
+  p {
+    margin-top: 0.2rem;
+    ${theme.fonts.primary}
+  }
+
+  .cost {
+    color: ${theme.colors.gray05};
+    text-decoration: line-through;
+  }
+
+  .price {
+    ${theme.fonts.price}
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 20px;
+    margin-top: 0.6rem;
+    background-color: ${theme.colors.gray06};
+    ${theme.fonts.deliver01}
+    color: ${theme.colors.gray03};
   }
 `;

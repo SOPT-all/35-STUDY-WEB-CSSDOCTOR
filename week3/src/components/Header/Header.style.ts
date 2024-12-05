@@ -22,7 +22,6 @@ export const headerStyle = (theme: Theme) => css`
     justify-content: center;
     align-items: flex-end;
     height: 6.3rem;
-    /* padding: 0 4rem; */
   }
 
   img {
@@ -35,23 +34,18 @@ export const headerStyle = (theme: Theme) => css`
     justify-content: space-between;
     align-items: flex-end;
     height: 3.5rem;
-    /* padding: 0 4rem; */
-    /* height: 3.5rem; */
-    ${theme.fonts.nav01}
-  }
 
-  .left {
-    /* display: flex; */
+    ${theme.fonts.nav01}
   }
 
   ul {
     display: flex;
+    cursor: pointer;
   }
 
   .list1_1 {
     display: flex;
     align-items: flex-end;
-    /* height: 3.5rem; */
     padding: 0.8rem 2.1rem 0.8rem 0;
     ${theme.fonts.nav01}
     color: ${theme.colors.gray02};
@@ -60,7 +54,6 @@ export const headerStyle = (theme: Theme) => css`
   .list1 {
     display: flex;
     align-items: flex-end;
-    /* height: 3.5rem; */
     padding: 0.8rem 2.1rem;
     ${theme.fonts.nav01}
     color: ${theme.colors.gray02};
@@ -69,7 +62,6 @@ export const headerStyle = (theme: Theme) => css`
   .sale {
     display: flex;
     align-items: flex-end;
-    /* height: 3.5rem; */
     padding: 0.8rem 2.1rem;
     ${theme.fonts.nav01}
     color: ${theme.colors.red01};
@@ -78,7 +70,6 @@ export const headerStyle = (theme: Theme) => css`
   .list2 {
     display: flex;
     align-items: flex-end;
-    /* height: 3.5rem; */
     padding: 0.8rem 2.1rem;
     ${theme.fonts.nav01}
     color: ${theme.colors.gray02};
@@ -87,7 +78,6 @@ export const headerStyle = (theme: Theme) => css`
   .list2_1 {
     display: flex;
     align-items: flex-end;
-    /* height: 3.5rem; */
     padding: 0.8rem 0 0.8rem 2.1rem;
     ${theme.fonts.nav01}
     color: ${theme.colors.gray02};
