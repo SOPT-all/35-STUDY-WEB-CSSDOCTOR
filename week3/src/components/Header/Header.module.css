@@ -3,6 +3,9 @@ header {
   top: 0;
   display: flex;
   flex-direction: column;
+  padding-top: 4rem;
+  background-color: white;
+  z-index: 1;
 }
 
 header h1 {
@@ -14,6 +17,7 @@ header h1 {
 header nav {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1rem; 
 }
 
 header nav ul {
