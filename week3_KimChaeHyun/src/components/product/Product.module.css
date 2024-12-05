@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+}
+
+.filter {
+  margin-bottom: 1rem;
+}
+
+.dropdown {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  outline: none;
+  cursor: pointer;
+}
