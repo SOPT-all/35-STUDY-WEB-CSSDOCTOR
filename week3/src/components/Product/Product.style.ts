@@ -34,6 +34,7 @@ export const searchFilter = (theme: Theme) => css`
   input {
     appearance: none;
     margin: 0;
+    margin-right: 1rem;
     width: 1.4rem;
     height: 1.4rem;
     border: 1px solid ${theme.colors.gray04};
@@ -41,7 +42,8 @@ export const searchFilter = (theme: Theme) => css`
   }
 
   label {
-    padding-left: 1rem;
+    display: flex;
+    align-items: center;
     ${theme.fonts.primary}
     color: ${theme.colors.gray03};
     cursor: pointer;
@@ -59,14 +61,65 @@ export const toggle = (theme: Theme) => css`
 
   li {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 22.4rem;
     padding: 1rem 0 0.9rem 0;
     border-top: 1px solid ${theme.colors.gray05};
   }
 
+  .genderQuestion,
+  .categoryQuestion,
+  .brandQuestion,
+  .colorQuestion,
+  .sizeQuestion,
+  .priceQuestion {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p.active {
+    ${theme.fonts.brandName}
+    color: ${theme.colors.black};
+  }
+
+  label {
+    display: flex;
+    margin-top: 1rem;
+  }
+
   span {
     padding-right: 1rem;
+  }
+
+  .genderToggle,
+  .categoryToggle,
+  .brandToggle {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .genderToggle.active,
+  .categoryToggle.active,
+  .brandToggle.active {
+    display: flex;
+    flex-direction: column;
+    max-height: 20rem;
+  }
+
+  .brands {
+    overflow-y: scroll;
+  }
+
+  .searchTab {
+    width: 22.4rem;
+    height: 3rem;
+    padding: 1.1rem 1.8rem 1rem 1rem;
+    margin-bottom: 1rem;
+    ${theme.fonts.primary}
+    border: 1px solid ${theme.colors.gray05}
   }
 `;
 

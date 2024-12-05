@@ -14,6 +14,9 @@ export const headerStyle = (theme: Theme) => css`
   }
 
   nav {
+    position: sticky;
+    top: -3rem;
+    z-index: 50;
     padding: 0 4rem;
   }
 
