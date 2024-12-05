@@ -12,8 +12,15 @@ const Product = () => {
   };
 
   return (
-    <>
+    <main className={styles.productWrapper}>
       <div className={styles.filter}>
+        <select id="sortOptions" value="인기순" className={styles.dropdown}>
+          <option value="인기순">인기순</option>
+          <option value="최근 등록순">최근 등록순</option>
+          <option value="낮은 가격순">낮은 가격순</option>
+          <option value="높은 가격순">높은 가격순</option>
+          <option value="할인율 높은순">할인율 높은순</option>
+        </select>
         <select
           id="gridSize"
           value={gridSize}
@@ -33,7 +40,7 @@ const Product = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-    </>
+    </main>
   );
 };
 

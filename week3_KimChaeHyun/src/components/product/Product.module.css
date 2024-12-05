@@ -1,15 +1,24 @@
-.grid {
-  display: grid;
+.productWrapper {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
 }
 
 .filter {
+  display: flex;
+  justify-content: end;
   margin-bottom: 1rem;
 }
 
 .dropdown {
+  width: 10rem;
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ddd;
   outline: none;
   cursor: pointer;
+}
+
+.grid {
+  display: grid;
 }
