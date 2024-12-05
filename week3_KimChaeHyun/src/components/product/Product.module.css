@@ -22,3 +22,15 @@
 .grid {
   display: grid;
 }
+
+.grid.small {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid.medium {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid.large {
+  grid-template-columns: repeat(2, 1fr);
+}

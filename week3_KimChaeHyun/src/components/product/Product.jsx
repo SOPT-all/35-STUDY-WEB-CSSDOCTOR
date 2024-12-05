@@ -33,8 +33,13 @@ const Product = () => {
         </select>
       </div>
       <div
-        className={styles.grid}
-        style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }}
+        className={`${styles.grid} ${
+          gridSize === 6
+            ? styles.small
+            : gridSize === 4
+            ? styles.medium
+            : styles.large
+        }`}
       >
         {PRODUCTS.map((product) => (
           <ProductCard key={product.id} product={product} />
