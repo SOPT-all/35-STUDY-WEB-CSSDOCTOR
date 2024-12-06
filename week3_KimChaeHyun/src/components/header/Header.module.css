@@ -1,7 +1,12 @@
 .header {
+  position: fixed;
+  top: 0;
   width: 100%;
   padding: 3rem;
+
+  background-color: white;
   text-align: center;
+  z-index: 3;
 }
 
 .logo {
