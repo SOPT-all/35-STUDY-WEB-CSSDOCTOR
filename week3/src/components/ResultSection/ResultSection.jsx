@@ -1,21 +1,18 @@
 import styles from './ResultSection.module.css';
-import dropdown from '../../assets/icon_dropdown_list.svg';
 import ProductCard from '../ProductCard/ProductCard';
+import FilterDropdown from '../Dropdown/Dropdown';
 
 const ResultSection = () => {
+  const popularOptions = ['인기순', '최신순', '가격 높은 순', '가격 낮은 순'];
+  const imageSizeOptions = ['원본', '중간', '작게'];
+
   return (
     <section>
       <div className={styles.result_header}>
         <span>75,264개의 결과</span>
         <div className={styles.sub_filter_container}>
-          <div className={styles.sub_filter}>
-            <span>인기순</span>
-            <img src={dropdown} alt='dropdown' />
-          </div>
-          <div className={styles.sub_filter}>
-            <span>이미지 크기</span>
-            <img src={dropdown} alt='dropdown' />
-          </div>
+          <FilterDropdown label='인기순' options={popularOptions} />
+          <FilterDropdown label='이미지 크기' options={imageSizeOptions} />
         </div>
       </div>
 

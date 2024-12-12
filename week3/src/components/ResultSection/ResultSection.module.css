@@ -9,23 +9,6 @@
   display: flex;
 }
 
-.sub_filter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  width: 11.5rem;
-  height: 3.2rem;
-  border: 1px solid gray;
-}
-.sub_filter img {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-.sub_filter:first-of-type {
-  border-right: none;
-}
-
 .result_grid {
   margin-top: 4rem;
   display: grid;
