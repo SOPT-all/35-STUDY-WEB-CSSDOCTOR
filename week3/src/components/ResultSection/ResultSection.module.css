@@ -1,0 +1,18 @@
+.result_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.sub_filter_container {
+  display: flex;
+}
+
+.result_grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem 2rem;
+  width: 100%;
+}
