@@ -23,7 +23,6 @@ const FilterSection = () => {
 
   return (
     <section className={styles.filter_section}>
-      {/* 배송 방법 */}
       <CheckboxItem label='국내배송' />
       <hr />
 
@@ -33,10 +32,10 @@ const FilterSection = () => {
             <h3>{category.title}</h3>
             <button>{openSections[index] ? '-' : '+'}</button>
           </div>
-          {/* ul 태그 토글 */}
-          {openSections[index] && category.items.length > 0 && (
-            <ul className={styles.category_list}>
-              {category.items.map((label) => (
+
+          <ul className={`${styles.category_list} ${openSections[index] ? styles.open : ''}`}>
+            {category.items.length > 0 &&
+              category.items.map((label) => (
                 <li key={label}>
                   {checkboxLabels.includes(label) ? (
                     <CheckboxItem label={label} />
@@ -45,8 +44,8 @@ const FilterSection = () => {
                   )}
                 </li>
               ))}
-            </ul>
-          )}
+          </ul>
+
           <hr />
         </div>
       ))}

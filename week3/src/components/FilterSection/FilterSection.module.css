@@ -22,7 +22,14 @@
 .category_list {
   display: flex;
   flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
+.category_list.open {
+  max-height: 1000px;
+}
+
 .sub_category {
   display: flex;
   align-items: center;
